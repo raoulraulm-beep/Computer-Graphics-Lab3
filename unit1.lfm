@@ -1,0 +1,107 @@
+object Form1: TForm1
+  Left = 892
+  Height = 467
+  Top = 267
+  Width = 488
+  Caption = 'Form1'
+  ClientHeight = 467
+  ClientWidth = 488
+  DesignTimePPI = 120
+  LCLVersion = '4.8.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 63
+    Top = 0
+    Width = 488
+    Align = alTop
+    ClientHeight = 63
+    ClientWidth = 488
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 56
+      Height = 20
+      Top = 0
+      Width = 11
+      Caption = 'N'
+    end
+    object Label2: TLabel
+      Left = 58
+      Height = 20
+      Top = 30
+      Width = 9
+      Caption = 'R'
+    end
+    object EditN: TEdit
+      Left = 80
+      Height = 28
+      Top = 3
+      Width = 48
+      TabOrder = 0
+      Text = '8'
+    end
+    object EditR: TEdit
+      Left = 80
+      Height = 28
+      Top = 32
+      Width = 44
+      TabOrder = 1
+      Text = '150'
+    end
+    object Button1: TButton
+      Left = 136
+      Height = 23
+      Top = 2
+      Width = 102
+      Caption = 'Создать'
+      TabOrder = 2
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Left = 271
+      Height = 23
+      Top = 3
+      Width = 105
+      Caption = 'сохранить'
+      TabOrder = 3
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Left = 136
+      Height = 28
+      Top = 32
+      Width = 160
+      Caption = 'считываться из svg'
+      TabOrder = 4
+      OnClick = Button3Click
+    end
+    object Button4: TButton
+      Left = 304
+      Height = 29
+      Top = 31
+      Width = 128
+      Caption = 'сохранить pbm'
+      TabOrder = 5
+      OnClick = Button4Click
+    end
+  end
+  object Image1: TImage
+    Left = 8
+    Height = 393
+    Top = 67
+    Width = 475
+    Proportional = True
+    Stretch = True
+  end
+  object SavePictureDialog1: TSavePictureDialog
+    Left = 392
+    Top = 8
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 4
+    Top = 2
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 440
+    Top = 9
+  end
+end
